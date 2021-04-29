@@ -1,0 +1,127 @@
+
+*,
+*::after,
+*::before {
+    margin : 0;
+    padding : 0;
+    box-sizing : inherit;
+}
+
+html {
+	font-size : 65.5%;
+	box-sizing : border-box;
+}
+
+@media only screen and (max-width : 75em) {
+	html {
+		font-size : 56.25%;
+	}
+}
+
+@media only screen and (max-width : 56.25em) {
+	html {
+		font-size : 50%;
+	}
+}
+
+body {
+	font-family : "Legend Deca", sans-serif;
+	weight : 400;
+	display : flex;
+	justify-content : center;
+	align-items : center;
+	min-height : 100vh;
+}   
+
+.container {
+	width : 65%;
+	display : grid;
+	border-radius : 10px;
+	grid-template-columns : repeat(3, 1fr);
+	overflow : hidden;
+}
+
+@media only screen and (max-width : 75em) {
+	.container {
+		width : 40%;
+	    grid-template-columns : 1fr;	
+	}
+}
+
+@media only screen and (max-width : 37.5em) {
+	.container {
+		width : 80%;
+	}
+}
+
+.card {
+	padding : 4rem;
+	display : grid;
+	gap : 3rem;
+}
+
+
+.card:nth-child(1) {
+  background-color: rgb(227, 136, 38);
+}
+
+.card:nth-child(2) {
+  background-color: rgb(0, 105, 112);
+}
+
+.card:nth-child(3) {
+  background-color: rgb(0, 66, 65);
+}
+
+.card h1 {
+    font-family : "Big Shoulders Display", cursive;
+    font-weight : 700;
+    font-size : 3.5rem;
+    text-transform : uppercase;
+	color: rgb(242, 242, 242);
+    line-height : 1.7;	
+	color: rgb(242, 242, 242);
+}
+
+.textbox {
+	width : 90%;
+	font-size : 1.6rem;
+	margin-bottom : 6rem;
+	color: rgba(255, 255, 255, 0.75);
+}
+
+@media only screen and (max-width : 56.25em) {
+	.textbox {
+		font-size : 1.4rem;
+		width : 100%;
+		margin-bottom : 3rem;
+	}
+}
+
+.card button {
+	border : 2px solid white;
+	padding : 1.4rem 4rem;
+	background-color : inherit;
+	color: rgb(242, 242, 242);
+	border-radius : 100px;
+	text-transform : capitalize;
+	font-family : inherit;
+	font-size : 1.4rem;
+	cursor : pointer;
+	transition : 0.3s;
+	justify-self : start;
+}
+
+.card button:hover {
+	background-color : white;
+}
+
+.card .btn-sedans-info:hover {
+	color : hsl(31, 77%, 52%);
+}
+.card .btn-suvs-info:hover {
+	color : hsl(184, 100%, 22%);
+}
+.card .btn-luxury-info:hover {
+	color : hsl(179, 100%, 13%);
+}
