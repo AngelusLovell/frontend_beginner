@@ -81,7 +81,7 @@ body {
 }
 
 .card {
-	height : 77.8%;
+	height : 80rem;
 	width : 110rem;
 	display : flex;
 	border-radius : 3rem;
