@@ -1,2 +1,2 @@
 # frontend_beginner
-Practicing of forntend web devlopement.
+Practicing of frontend web devlopement.
