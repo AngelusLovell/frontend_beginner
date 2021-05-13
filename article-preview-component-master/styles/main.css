@@ -31,7 +31,7 @@ body {
 	background : var(--color-light-grayish-blue);
 }
 
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width : 900px) {
 	body {
 		height : auto;
 		display : flex;
@@ -49,7 +49,7 @@ body {
 	align-items : center;
 }
 
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width : 900px) {
 	.container {
 		width : 90%;
 		height : auto;
@@ -57,19 +57,18 @@ body {
 }
 
 .card {
-	width : 75.2rem;
+	width : 75rem;
 	border-radius : 1rem;
-	overflow : hidden;
 	display : flex;
 	flex-flow : row wrap;
 	background : white;
 }
 
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width : 900px) {
 	.card {
 		height : auto;
 		width : 100%;
-		height : auto;
+		max-width : 40rem;
 	}
 }
 
@@ -80,11 +79,12 @@ body {
 }
 
 .card__img {
+	border-radius : 1rem;
 	width : 120%;
 	height : 100%;
 }
 
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width : 900px) {
     .card__img-container {
     	width : 100%;
 		max-height : 25rem;
@@ -98,36 +98,39 @@ body {
 
 .card__content {
 	width : 60%;
-	padding-top : 3rem;
+	padding-top : 4rem;
+	padding-bottom : 1.5rem;
 }
 
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width : 900px) {
     .card__content {
     	width : 100%;
     	height : auto;
+		padding-bottom : 0;
     }
 }
 
 .card__content p {
-	font-size : 1.95rem;
 	letter-spacing : .05rem;
 	word-spacing : .06rem;
 	font-family: 'Manrope', sans-serif;
 }
 
 .card__content p:nth-child(1) {
+	font-size : 2.1rem;
 	color : var(--color-very-dark-grayish-blue);
 	font-weight : 700;
 	margin : 0 3rem 1.7rem;
 }
 
 .card__content p:nth-child(2) {
+	font-size : 1.7rem;
 	color : var(--color-desaturated-dark-blue);
 	margin : 0 3rem 3rem;
 	font-weight : 500;
 }
 
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width : 900px) {
 	.card__content p {
 		letter-spacing : 0;
 		word-spacing : 0;
@@ -139,8 +142,7 @@ body {
 	width : 100%;
 	position : relative;
 	padding : 1.8rem 3rem;
-	display : flex;
-	align-items : center;
+	border-radius : 0 0 1rem 1rem; 
 }
 
 .owner__img {
@@ -150,9 +152,10 @@ body {
 }
 
 .card__owner h2 {
+	width : auto;
 	font-family: 'Manrope', sans-serif;
 	font-size : 1.8rem;
-	margin-left : 2rem;
+	margin-left : calc(4.4rem + 2rem);
 	color : var(--color-very-dark-grayish-blue);
 }
 
@@ -162,12 +165,37 @@ body {
 	color : var(--color-desaturated-dark-blue);
 }
 
-.card__owner .share-icon {
+.card__owner .share-logo-icon {
 	position : absolute;
-	right : 3rem;
 	padding : 1rem;
+	top : 2.2rem;
+	right : 3rem;
 	border-radius : 50%;
 	background : var(--color-grayish-blue);
+}
+
+.share-media-wrapper {
+	display : flex;
+	height : 75%;
+	justify-content : center;
+	align-items : center;
+	width : auto;
+	border-radius : 1rem;
+	padding : 0 3rem;
+    background : var(--color-very-dark-grayish-blue);
+	position : absolute;
+	top : -6rem;
+	right : -9rem;
+}
+
+@media only screen and (max-width : 900px) {
+	.share-media-wrapper {
+	   width : 100%;
+	   height : 100%;
+	   position : static;
+	   justify-content : left;
+	   border-radius : 0 0 1rem 1rem;
+    }
 }
 
 .card__owner .share-text {
@@ -187,20 +215,21 @@ body {
 	background-position : left center, center center, right center;
 }
 
-.share-text, .share-media-icon {
+.share-media-wrapper {
 	display : none;
 }
 
-.card__owner:hover {
-	background : var(--color-very-dark-grayish-blue);
+@media only screen and (max-width : 900px) {
+	.card__owner:hover {
+		padding : 0;
+	}
+    .card__owner:hover .owner-info-wrapper {
+    	display : none;
+    }
 }
 
-.card__owner:hover h2, .card__owner:hover .owner__img {
-	display : none;
-}
-
-.card__owner:hover .share-text, .card__owner:hover .share-media-icon {
-	display : block;
+.card__owner:hover .share-media-wrapper {
+	display : flex;
 }
 
 
