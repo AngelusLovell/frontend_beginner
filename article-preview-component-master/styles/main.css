@@ -51,7 +51,7 @@ body {
 
 @media only screen and (max-width : 900px) {
 	.container {
-		width : 90%;
+		width : 92.5%;
 		height : auto;
 	}
 }
@@ -62,6 +62,7 @@ body {
 	display : flex;
 	flex-flow : row wrap;
 	background : white;
+	box-shadow : .5rem .5rem 2rem hsl(212, 25%, 69%);
 }
 
 @media only screen and (max-width : 900px) {
@@ -185,7 +186,16 @@ body {
     background : var(--color-very-dark-grayish-blue);
 	position : absolute;
 	top : -6rem;
-	right : -9rem;
+	right : -8.82rem;
+}
+
+.share-media-wrapper::after {
+	content : "";
+	position : absolute;
+	top : 100%;
+	border-width : 1.2rem;
+	border-style : solid;
+	border-color : var(--color-very-dark-grayish-blue) transparent transparent transparent;
 }
 
 @media only screen and (max-width : 900px) {
@@ -195,6 +205,9 @@ body {
 	   position : static;
 	   justify-content : left;
 	   border-radius : 0 0 1rem 1rem;
+    }
+	.share-media-wrapper::after {
+	   content : none;
     }
 }
 
@@ -219,6 +232,10 @@ body {
 	display : none;
 }
 
+.card__owner:hover .share-media-wrapper {
+	display : flex;
+}
+
 @media only screen and (max-width : 900px) {
 	.card__owner:hover {
 		padding : 0;
@@ -228,9 +245,6 @@ body {
     }
 }
 
-.card__owner:hover .share-media-wrapper {
-	display : flex;
-}
 
 
 .attribution { font-size: 11px; text-align: center; }
