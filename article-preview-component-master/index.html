@@ -5,16 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
   <link rel="stylesheet" href="./styles/main.css">
+  <script src="https://kit.fontawesome.com/0038b54e06.js" crossorigin="anonymous"></script>
   
   <title>Frontend Mentor | Article preview component</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+     $(document).ready(function() {
+	    $(".share-btn").click(function () {
+		   $(".share-btn").toggleClass("bg-change");
+		   $(".share-btn i").toggleClass("color-change");
+		   $(".share-media-wrapper").toggleClass("hover-class");
+		});
+	 });
+  </script>
 
 </head>
 <body>
 
   <div class="container">
-     <div class="card">
+     <article class="card">
 	   <div class="card__img-container"> 
 	      <img src="./images/drawers.jpg" class="card__img" alt="" role="presentation">
 	   </div>
@@ -33,19 +43,20 @@
               <span> 28 Jun 2020 <span> </h2>
 			</div>
           
-		    <img src="./images/icon-share.svg" class="share-logo-icon" alt=""> 
+		    <button type="button" class="share-btn"> <i class="fas fa-share share-btn-icon"></i> </button>
 			<div class="share-media-wrapper">
                <span class="share-text"> Share </span>
 			   <span class="share-media-icon"> </span>
 			</div>
 		  </div>
 	   </div>
-	 </div>
+	 </article>
   </div>
   
-  <!--div class="attribution">
+  <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div-->
+    Coded by <a href="https://github.com/AngelusLovell">Amlan Jyoti Sonowal</a>.
+  </div>
+  
 </body>
 </html>
