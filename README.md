@@ -23,3 +23,5 @@ https://angeluslovell.github.io/frontend_beginner/three_column_card_preview/
 coding-bootcamp-testimonials-slider-master -
 https://angeluslovell.github.io/frontend_beginner/coding-bootcamp-testimonials-slider-master/
 
+four-card-feature-section-master -
+https://angeluslovell.github.io/frontend_beginner/four-card-feature-section-master/
