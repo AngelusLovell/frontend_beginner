@@ -1,3 +1,12 @@
+@keyframes fadeIn {
+	0% {
+		opacity : 0;
+	}
+	100% {
+		opacity : 1;
+	}
+}
+
 :root {
 	
    --color-red: hsl(0, 78%, 62%);
@@ -44,6 +53,13 @@ body {
 	}
 }
 
+.header {
+	width : 100%;
+	display : flex;
+	flex-flow : row wrap;
+	justify-content : center;
+}
+
 .main-heading {
 	width : 100%;
 	text-align : center;
@@ -55,12 +71,6 @@ body {
 .main-heading:nth-child(1) { font-weight : 200; }
 .main-heading:nth-child(2) { margin-bottom : 1.8rem; }
 
-.sub-heading-wrapper {
-	width : 100%;
-	display : flex;
-	flex-flow : row wrap;
-	justify-content : center;
-}
 .sub-heading {
 	width : 100%;
 	max-width : 43rem;
@@ -69,6 +79,7 @@ body {
     font-family: 'Poppins', sans-serif;
 	margin-bottom : 8rem;
 	color : var(--color-grayish-blue);
+	animation : fadeIn 1s;
 }
 @media only screen and (min-width : 600px) {
 	.sub-heading {
@@ -164,8 +175,7 @@ body {
 	color : var(--color-grayish-blue);
 }
 
-.card-wrapper {
-    transition : transform .7s;	
+.card-wrapper {	
 }
 .card-wrapper:hover {
 	transform : translateY(-6.5%);
