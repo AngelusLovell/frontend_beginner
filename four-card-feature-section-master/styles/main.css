@@ -176,6 +176,7 @@ body {
 }
 
 .card-wrapper {	
+    transition : transform .7s;
 }
 .card-wrapper:hover {
 	transform : translateY(-6.5%);
