@@ -101,28 +101,28 @@ body {
 	margin : 0 0 4rem;
 	box-shadow : 1rem 1rem 40px -2.5rem var(--color-blue);
 }
-.card:nth-child(1) { 
+.card-wrapper:nth-child(1) .card { 
     border-top : 4px solid var(--color-cyan);
 	background : url("../images/icon-supervisor.svg");
 	background-repeat : no-repeat;
 	background-position : calc(100% - 3.5rem) calc(100% - 2.9rem);
 	background-size : 25%;
 }
-.card:nth-child(2) {
+.card-wrapper:nth-child(2) .card {
 	border-top : 4px solid var(--color-red);
 	background : url("../images/icon-team-builder.svg");
 	background-repeat : no-repeat;
 	background-position : calc(100% - 3.5rem) calc(100% - 2.9rem);
 	background-size : 25%;
 }
-.card:nth-child(3) { 
+.card-wrapper:nth-child(3) .card { 
     border-top : 4px solid var(--color-orange);
 	background : url("../images/icon-karma.svg");
 	background-repeat : no-repeat;
 	background-position : calc(100% - 3.5rem) calc(100% - 2.9rem);
 	background-size : 25%;
 }
-.card:nth-child(4) { 
+.card-wrapper:nth-child(4) .card { 
     border-top : 4px solid var(--color-blue);
 	background : url("../images/icon-calculator.svg");
 	background-repeat : no-repeat;
@@ -130,22 +130,27 @@ body {
 	background-size : 25%;
 }
 @media only screen and (min-width : 600px) {
-	.card:nth-child(odd) {
+	.card-wrapper:nth-child(odd) .card {
 	    margin-right : 3.5rem;
     }
 }
 
 @media only screen and (min-width : 900px) {
-	.card:nth-child(4) {
-		margin-left : 3.5rem;
+	.card-wrapper:nth-child(4) {
 		order : 3;
 	}
-	.card:nth-child(3) {
-		margin-left : 3.5rem;
+	.card-wrapper:nth-child(3) {
 		order : 4;
 	}
-	.card:nth-child(1), .card:nth-child(4) {
-		transform : translateY(50%);
+	.card-wrapper:nth-child(4) .card {
+		margin-left : 3.5rem;
+	}
+	.card-wrapper:nth-child(3) .card {
+		margin-left : 3.5rem;
+	}
+	.card-wrapper:nth-child(1), .card-wrapper:nth-child(4) {
+		position : relative;
+		top : 25%;
 	}
 }
 
@@ -157,6 +162,13 @@ body {
 .card__text {
 	font-size : 1.1rem;
 	color : var(--color-grayish-blue);
+}
+
+.card-wrapper {
+    transition : transform .7s;	
+}
+.card-wrapper:hover {
+	transform : translateY(-6.5%);
 }
 
 footer { 
