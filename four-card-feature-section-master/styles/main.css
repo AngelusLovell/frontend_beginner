@@ -25,7 +25,7 @@ html {
 body {
 	height : auto;
 	width : 100vw;
-	padding : 12rem 5rem 0;
+	padding : 6rem 5rem 0;
 	font-size : 2rem;
     font-family: 'Poppins', sans-serif;
 	display : flex;
@@ -35,7 +35,7 @@ body {
 }
 @media only screen and (min-width : 600px) {
     body {
-		padding-top : 10rem; 
+		padding-top : 8rem; 
 	}
 }
 @media only screen and (min-width : 900px) {
