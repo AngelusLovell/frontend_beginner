@@ -1,0 +1,214 @@
+:root {
+   --color-red: hsl(0, 100%, 74%); 
+   --color-green: hsl(154, 59%, 51%);
+   --color-blue: hsl(248, 32%, 49%);
+   --color-dark-blue: hsl(249, 10%, 26%); 
+   --color-grayish-blue: hsl(246, 25%, 77%);
+}
+
+html {
+	font-size : 50%;
+	box-sizing : border-box;
+}
+
+*,
+*::before,
+*::after {
+	padding : 0;
+	margin : 0;
+	box-sizing : inherit;
+}
+
+body {
+	font-size : 2rem;
+	width : 100vw;
+	height : auto;
+	padding-top : 10rem;
+	color : white;
+	font-family : "Poppins", sans-serif;
+	background-color : var(--color-red);
+	background-image : url("../images/bg-intro-mobile.png");
+	overflow-x : hidden;
+}
+@media only screen and (min-width: 900px) {
+	body {
+		padding-top : 10rem;
+		display : flex;
+		flex-flow : row wrap;
+		justify-content : center;
+    	background-image : url("../images/bg-intro-desktop.png");
+	}
+}
+
+.wrapper-responsive {
+	display : flex;
+	width : 100%;
+	height : auto;
+	flex-flow : row wrap;
+	justify-content : center;
+	align-items : center;
+}
+
+.main {
+	width : 100%;
+}
+@media only screen and (min-width: 900px) {
+    .main {
+		width : auto;
+	}
+}
+.main__left, .main__right {
+	width : 80%;
+}
+@media only screen and (min-width: 900px) {
+	.main__left {
+	    width : 45%;
+		max-width : 600px;
+    }
+	.main__right {
+	    width : 45%;
+		max-width : 600px;
+    }
+	.main__left {
+		justify-content : flex-start;
+	}
+}
+
+.left__text, .left__heading {
+	color : white;
+	text-align : center;
+	width : 100%;
+	max-width : 67rem;
+	font-family : "Poppins", sans-serif;
+}
+@media only screen and (min-width : 900px) {
+	.left__text, .left__heading {
+		text-align : start;
+		width : 90%;
+	}
+}
+
+.left__heading {
+	margin-bottom : 4rem;
+	font-size : 3.5rem;
+	font-weight : 600;
+	line-height : 4.5rem;
+}
+@media only screen and (min-width: 900px) {
+	.left__heading {
+		font-size : 6rem;
+		line-height : 7rem;
+	}
+}
+.left__text {
+	font-size : 2rem;
+	line-height : 3rem;
+	margin-bottom : 7rem;
+	font-weight : 400;
+}
+
+.card__text {
+	color : white;
+	background-color : var(--color-blue);
+	font-family : "Poppins", sans-serif;
+	font-size : 2rem;
+	font-weight : 600;
+	width : 100%;
+	max-width : 53rem;
+	text-align : center;
+	padding : 3rem 2.8rem;
+	line-height : 2.7rem;
+	border-radius : 1rem;
+	margin-bottom : 3rem;
+	box-shadow : 0 1rem 0 rgba(0, 0, 0, 0.2);
+}
+@media only screen and (min-width: 900px) {
+	.card__text {
+		max-width : 100%; 
+	}
+}
+.small-text {
+	font-weight : 300;
+}
+.form-wrapper {
+	margin-bottom : 7rem;
+	width : 100%;
+	max-width : 53rem;
+}
+@media only screen and (min-width: 900px) {
+	.form-wrapper {
+		max-width : 100%;
+	}
+}
+.form-card {
+	width : 100%;
+	background : white;
+	padding : 3rem;
+	border-radius : 1rem;
+	box-shadow : 0 1rem 0 rgba(0, 0, 0, .2);
+}
+@media only screen and (min-width: 900px) {
+	.form-card {
+	    padding : 5rem;
+    }
+}
+.form-group {
+	width : 100%;
+	height : auto;
+	position : relative;
+	margin-bottom : 2rem;
+}
+.form-card button {
+	margin-bottom : 2rem;
+}
+.form-group input, .form-card button, .form-group p {
+	width : 100%;
+	font-family : "Poppins", sans-serif;
+}
+.form-group input, .form-card button {
+	font-weight : 600;
+	padding : 0 2rem;
+	height : 7rem;
+	border : 1px solid var(--color-grayish-blue);
+	border-radius : .7rem;
+}
+.form-group input {
+	outline : none;
+	transition : border .3s;
+}
+.form-group input:focus {
+	outline : none;
+}
+.form-card button {
+	color : white;
+	text-transform : uppercase;
+	background : var(--color-green);
+}
+.form-card p {
+	color : var(--color-grayish-blue);
+	text-align : center;
+	font-size : 1.5rem;
+}
+.form-card p .text-red {
+	color : var(--color-red);
+	font-weight : 700;
+}
+.form-group .error-icon {
+	display : none;
+	position : absolute;
+	height : auto;
+	right : 3rem;
+	top : 50%;
+	transform : translateY(-35%);
+}
+
+
+.attribution { 
+	font-family : "Poppins", sans-serif;
+	font-size: 11px; 
+	text-align: center;
+    margin-bottom : 3rem;	
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
