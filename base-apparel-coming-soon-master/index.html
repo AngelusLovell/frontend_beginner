@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="./styles/main.css" rel="stylesheet">
+
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+</head>
+<body>
+    
+	<div class="main-wrapper wrapper-responsive">
+	
+        <header class="page-logo-wrapper wrapper-responsive">
+		   <div class="page-logo">
+              <img src="./images/logo.svg" alt="website logo">
+		   </div>
+	    </header>
+
+        <picture class="hero-img-wrapper">
+		   <source media="(max-width : 1000px)" srcset="./images/hero-mobile.jpg">
+		   <source media="(min-width : 1000px)" srcset="./images/hero-desktop.jpg">
+		   <img src="./images/hero-desktop.jpg" alt="female model">
+		</picture>
+	    
+	    <main class="content-wrapper wrapper-responsive">	
+	    	
+	    	<div class="content__heading-wrapper wrapper-responsive">
+	           <h1 class="content__heading">
+                   We're 
+	    		   <span class="sub-heading"> coming <br /> soon </span>
+	    	   </h1>
+	    	</div>
+        
+	        <div class="content__text-wrapper wrapper-responsive">
+               <p class="content__text"> Hello fellow shoppers! We're currently building our new fashion store. 
+               Add your email below to stay up-to-date with announcements and our launch deals. </p>
+	    	</div>
+        
+            <form class="content__form wrapper-responsive">
+	    	     <div class="form-group">
+	    	        <input type="email" placeholder="Email Address" class="email-input-field" onfocus="validateInput(1)" onblur="validateInput(0)">
+	    		    <button type="submit" class="email-submit-btn"> 
+	    		        <i class="material-icons" style="font-size:48px;color:white">keyboard_arrow_right</i>
+	    		    </button>
+	    		    <span class="email-validating-alert" id="alert"> Please provide a valid email </span>
+	    		 </div>
+            </form>
+			
+        </main>
+	    
+        <footer class="footer wrapper-responsive">
+            <p class="attribution">
+              Challenge by &nbsp; <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+               Coded by &nbsp; <a href="#"> Amlan Jyoti Sonowal</a>.
+            </p>
+        </footer>
+	
+	</div>
+	
+	<script> 
+	    function validateInput(value) {
+			var targetEle = document.getElementsByClassName("email-validating-alert");
+			targetEle[0].style.opacity = value;
+		}
+	</script>
+</body>
+</html>
