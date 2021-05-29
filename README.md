@@ -28,3 +28,6 @@ https://angeluslovell.github.io/frontend_beginner/four-card-feature-section-mast
 
 intro-component-with-signup-form-master
 https://angeluslovell.github.io/frontend_beginner/intro-component-with-signup-form-master/
+
+single-price-grid-component-master
+https://angeluslovell.github.io/frontend_beginner/single-price-grid-component-master/
