@@ -1,0 +1,184 @@
+:root {
+   --color-cyan: hsl(179, 62%, 43%);
+   --color-bright-yellow: hsl(71, 73%, 54%);
+   --color-light-gray: hsl(204, 43%, 93%);
+   --color-grayish-blue: hsl(218, 22%, 67%);	
+}
+
+html {
+	font-size : 50%;
+	box-sizing : border-box;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width : 100vw;
+	height : auto;
+	min-height : 100vh;
+	font-size : 2rem;
+	font-family : "Karla", sans-serif;
+	padding : 5.5rem 5.5rem 0;
+	background : var(--color-light-gray);
+	overflow-x : hidden;
+}
+@media only screen and (min-width: 600px) {
+	body {
+		padding : 0;
+		padding-top : 17rem;
+	}
+}
+.wrapper-responsive {
+	height : auto;
+	width : auto;
+	display : flex;
+	justify-content : center;
+	align-items : center;
+}
+.price-card-wrapper {
+	border-radius : 1rem;
+	max-width : 40rem;
+	margin-bottom : 5rem;
+	display : grid;
+	grid-template-columns : repeat(2, 1fr);
+	grid-template-rows : auto auto;
+	overflow : hidden;
+}
+@media only screen and (min-width: 600px) {
+	.price-card-wrapper {
+		max-width : initial;
+        min-width : 65rem;
+		width : 40%;
+		margin-bottom : 13rem;
+	}
+}
+
+.first-content {
+	background : white;
+	padding : 4rem;
+	font-family : "Karla", sans-serif;
+	grid-column : 1 / span 2;
+    grid-row : 1 / span 1;
+}
+@media only screen and (min-width: 600px) {
+	.first-content {
+    	grid-column : 1 / span 2;
+        grid-row : 1 / span 1;
+	}
+}
+.first-content__heading {
+	color : var(--color-cyan);
+	font-size : 2.3rem;
+	font-weight : 400;
+	font-family : "Karla", sans-serif;
+	margin-bottom : 2.5rem;
+}
+.first-content__sub-heading {
+	color : var(--color-bright-yellow);
+	font-size : 1.9rem;
+	font-weight : 400;
+	font-family : "Karla", sans-serif;
+	margin-bottom : 1.8rem;
+}
+.first-content__text {
+	color : hsl(204, 43%, 65%);
+	font-size : 1.7rem;
+	line-height : 2.4rem;
+}
+
+.second-content {
+	color : white;
+	background : var(--color-cyan);
+	padding : 3.5rem 4rem;
+	font-family : "Karla", sans-serif;
+	grid-column : 1 / span 2;
+    grid-row : 2 / span 1;
+}
+@media only screen and (min-width: 600px) {
+	.second-content {
+    	grid-column : 1 / span 1;
+        grid-row : 2 / span 1;
+	}
+}
+.second-content__heading {
+	font-size : 1.9rem;
+	font-weight : 400;
+	margin-bottom : 1rem;
+}
+.second-content__sub-heading {
+	font-size : 2rem;
+	font-weight : 400;
+	margin-bottom : .5rem;
+}
+.second-content__sub-heading .big {
+	font-size : 3rem;
+}
+.second-content__text {
+	font-size : 1.8rem;
+	margin-bottom : 3rem;
+}
+.sign-up-btn {
+	color : white;
+	background : var(--color-bright-yellow);
+	width : 100%;
+	padding : 1.9rem;
+	border-radius : .5rem; 
+	outline : none;
+	border : none;
+	box-shadow : 0 .7rem 1rem hsl(179, 40%, 43%);
+	transition : transform .3s;
+}
+.sign-up-btn:hover {
+	cursor : pointer;
+	background : hsl(71, 60%, 54%);
+	transform : translateY(-5%); 
+}
+.sign-up-btn:active {
+	transform : translateY(0rem);
+	background : hsl(71, 50%, 50%);
+}
+.sign-up-btn a {
+   color : inherit;
+   text-decoration : none;
+}	
+
+.third-content {
+	color : white;
+	background : hsla(179, 62%, 60%);
+	padding : 3.5rem 4rem;
+	grid-column : 1 / span 2;
+    grid-row : 3 / span 1;
+}
+@media only screen and (min-width: 600px) {
+	.third-content {
+    	grid-column : 2 / span 1;
+        grid-row : 2 / span 1;
+	}
+}
+.third-content__heading {
+	font-size : 1.9rem;
+	font-weight : 400;
+	margin-bottom : 2rem;
+}
+.third-content__text {
+	font-size : 1.5rem;
+	font-weight : 400;
+	line-height : 2.3rem;
+}
+
+.attribution { 
+	font-size: 11px; 
+	text-align: center;
+    margin-bottom : 2rem;	
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
