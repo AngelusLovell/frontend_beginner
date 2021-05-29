@@ -10,12 +10,18 @@
 	 inputObj[2].addEventListener("focus", addStyle);
 	 inputObj[3].addEventListener("focus", addStyle);
 
+	 inputObj[0].addEventListener("keyup", function() { validating(0); });
+	 inputObj[1].addEventListener("keyup", function() { validating(1); });
+	 inputObj[2].addEventListener("keyup", function() { validating(2); });
+	 inputObj[3].addEventListener("keyup", function() { validating(3); });
+	 
      function addStyle() {
         this.style.border ="2px solid var(--color-red)";
      }	 
 	 function removeStyle() {
 	    this.style.border ="1px solid var(--color-grayish-blue)"; 
 	 }
+	 
 	 
      function validating(index) {
 	    var targetEle = document.getElementsByTagName("input");
