@@ -31,3 +31,7 @@ https://angeluslovell.github.io/frontend_beginner/intro-component-with-signup-fo
 
 single-price-grid-component-master
 https://angeluslovell.github.io/frontend_beginner/single-price-grid-component-master/
+
+ping-coming-soon-page-master
+https://angeluslovell.github.io/frontend_beginner/ping-coming-soon-page-master/
+
