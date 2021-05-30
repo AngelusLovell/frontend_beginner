@@ -1,0 +1,238 @@
+:root {
+	--color-blue: hsl(223, 87%, 63%);
+	--color-pale-blue: hsl(223, 100%, 88%);
+    --color-light-red: hsl(354, 100%, 66%);
+    --color-gray: hsl(0, 0%, 59%);
+    --color-very-dark-blue: hsl(209, 33%, 12%); 
+}
+
+html {
+	font-size : 50%;
+	box-sizing : border-box;
+}
+
+*,
+*::before,
+*::after {
+	margin : 0;
+	padding : 0;
+	box-sizing : inherit;
+}
+
+body {
+	width : 100vw;
+	height : auto;
+	padding : 0 5rem;
+	font-size : 2rem;
+	font-family: 'Libre Franklin', sans-serif;
+	overflow-x : hidden;
+}
+@media only screen and (min-width: 800px) {
+	body {
+		padding : 0 11rem;
+	}
+}
+
+@media only screen and (min-width: 400px) {
+	.global-wrapper {
+	display : flex;
+	flex-flow : row wrap;
+	justify-content : center;
+	align-items : center;
+	margin : auto;
+	}
+}
+.global-container {
+	width : 100%;
+	height : auto;
+	max-width : 50rem;
+}
+@media only screen and (min-width: 800px) {
+	.global-container {
+		max-width : 80rem;
+	}
+}
+
+.header-wrapper {
+    width : 100%;
+	height : auto;
+	text-align : center;
+	padding : 12rem 0 10rem;
+}
+.main-wrapper {
+	width : 100%;
+	height : auto;
+}
+
+
+
+
+.content {
+	width : 100;
+	height : auto;
+	margin-bottom : 10rem;
+}
+.content__heading {
+	font-size : 3rem;
+	font-weight : 400;
+	font-family: 'Libre Franklin', sans-serif;
+	text-align : center;
+	color : var(--color-gray);
+	line-height : 0;
+	margin-bottom : 4rem;
+}
+@media only screen and (min-width: 800px) {
+	.content__heading {
+		font-size : 6rem;
+		margin-bottom : 5rem;
+	}
+}
+.content__heading .heading__big {
+	font-weight : 700;
+	color : var(--color-very-dark-blue);
+}
+.content__text {
+	font-family : 2rem;
+	font-weight : 300;
+	font-family: 'Libre Franklin', sans-serif;
+	text-align : center;
+	margin-bottom : 5rem;
+}
+@media only screen and (min-width: 800px) {
+	.content__text {
+		font-size : 2.5rem;
+	}
+}
+.content__form {
+	width : 100%;
+	height : auto;
+	display : flex;
+	flex-flow : row wrap;
+	justify-content : space-between;
+	padding : 0 7rem;
+}
+@media only screen and (max-width: 400px) {
+	.content__form {
+		padding : 0;
+	}
+}
+@media only screen and (min-width: 800px) {
+	.content__form {
+		padding : 0;
+	}
+}
+.form__email-input, .form__submit-btn {
+	display : block;
+	width : 100%;
+	height : auto;
+	outline : none;
+	border-radius : 10rem;
+	height : 7rem;
+}
+.form__email-input {
+	margin-bottom : 1.6rem;
+	padding-left : 4rem;
+	font-family : 'Libre Franklin', sans-serif;
+	border : 1px solid lightgrey;
+	transition : padding-left .4s;
+}
+
+
+.form__email-input::placeholder {
+	color : lightgrey;
+}.form__email-input::-ms-input-placeholder {
+	color : lightgrey;
+}.form__email-input:-ms-input-placeholder {
+	color : lightgrey;
+}
+
+.form__email-input:focus {
+	outline : 0;
+	padding-left : 4.3rem;
+}
+
+
+.form__submit-btn {
+	color : white;
+	background : var(--color-blue);
+	font-family : 2rem;
+	font-weight : 600;
+	font-family: 'Libre Franklin', sans-serif;
+	border : 0;
+	box-shadow : 0 .5rem 1rem hsla(223, 87%, 63%, .5);
+	transition : background .3s;
+}
+@media only screen and (min-width: 800px) {
+	.form__email-input {
+		width : 65%;
+    	margin-bottom : 0;
+	}
+	.form__submit-btn {
+		width : 32%;
+	}
+}
+
+
+
+.hero-img {
+    width : 100%;
+    height : auto;
+    margin-bottom : 15rem;
+}
+.hero-img img {
+	width : 100%;
+	height : auto;
+}
+
+
+
+.footer-wrapper {
+	width : 100%;
+	height : auto;
+}
+.footer__share-media {
+	width : 100%;
+	height : auto;
+	display : flex;
+	margin-bottom : 3rem;
+}
+.media-icon {
+	fill : var(--color-blue);
+	padding : 1rem;
+	height : 4.1rem;
+	width : auto;
+	border : 1px solid lightgrey;
+	border-radius : 50%;
+	overflow : visible;
+	transition : transform .4s;
+}
+.media-icon:hover {
+	transform : scale(1.2);
+}
+.media-icon:not(:last-child) {
+	margin-right : 1.7rem;
+}
+.media-icon:nth-child(1) {
+	margin-left : auto;
+}
+.media-icon:nth-child(3) {
+	margin-right : auto;
+}
+
+.copyright-info {
+	font-size : 1.57rem;
+	font-family : 'Libre Franklin', sans-serif;
+	text-align: center;
+	color : var(--color-gray);
+	margin-bottom : 1.7rem;
+}
+.attribution { 
+    font-size: 11px; 
+	text-align: center; 
+	color : var(--color-gray);
+	margin-bottom : 3.8rem;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    color : var(--color-blue);
+}
