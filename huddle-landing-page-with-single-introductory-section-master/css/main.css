@@ -208,12 +208,15 @@ body {
 	overflow : visible;
 	transition : transform .4s; 
 }
-.social-media__link:hover .media-link__icons {
+.social-media__link .media-link__icons:hover {
 	fill : hsl(300, 69%, 71%);
 	border-color : hsl(300, 69%, 71%);
 	transform : scale(1.2);
 }
 .attribution {
+	width : auto;
+	height : auto;
+	display : inline;
 	font-family: 'Poppins', sans-serif;
 	font-weight : 400;
     font-size: 11px; 
@@ -229,7 +232,7 @@ body {
 		top : 1rem;
 	}
 }
-.attribution a { 
+.attribution a {
     color: white; 
 }
 .attribution a:hover {
