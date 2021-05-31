@@ -35,3 +35,6 @@ https://angeluslovell.github.io/frontend_beginner/single-price-grid-component-ma
 ping-coming-soon-page-master
 https://angeluslovell.github.io/frontend_beginner/ping-coming-soon-page-master/
 
+huddle-landing-page-with-single-introductory-section-master
+https://angeluslovell.github.io/frontend_beginner/huddle-landing-page-with-single-introductory-section-master/
+
