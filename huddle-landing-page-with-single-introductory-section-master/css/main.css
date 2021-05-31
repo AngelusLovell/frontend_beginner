@@ -1,0 +1,237 @@
+:root {
+   --color-violet: hsl(257, 40%, 49%);
+   --color-soft-magenta: hsl(300, 69%, 71%);
+}
+
+html {
+	font-size : 50%;
+	box-sizing : border-box;
+}
+
+*,
+*::before,
+*::after {
+	margin : 0;
+	padding : 0;
+	box-sizing : inherit;
+}
+
+body {
+	width : 100vw;
+	height : auto;
+	padding : 0 4rem 5rem;
+	font-size : 2rem;
+	font-family: 'Open Sans', sans-serif;
+	background : var(--color-violet) url("../images/bg-mobile.svg");
+	background-repeat : no-repeat;
+	overflow-x : hidden;
+    background-position : center top;
+	background-size : 100% auto;
+}
+@media only screen and (min-width: 900px) {
+	body {
+	    background : var(--color-violet) url("../images/bg-desktop.svg");
+		padding-bottom : 3rem;
+	}
+}
+@media only screen and (min-width: 1100px) {
+	body {
+		padding : 0 0 3.2rem;
+	}
+}
+
+.wrapper {
+	width : 100%;
+    height : auto;	
+}
+.main-container {
+	display : flex;
+	flex-flow : row wrap;
+	justify-content : center;
+}
+
+
+.header-wrapper {
+	max-width : 60rem;
+}
+@media only screen and (min-width: 900px) {
+	.header-wrapper {
+		max-width : initial;
+	}
+}
+@media only screen and (min-width: 1100px) {
+	.header-wrapper {
+		width : 90%;
+	}
+}
+.header__logo {
+	width : 100%;
+	height : auto;
+	padding : 5rem 0 9rem;
+}
+@media only screen and (min-width: 900px) {
+	.header__logo {
+		width : 35%;
+	}
+}
+.header__logo img {
+	width : 45%;
+	height : auto;
+}
+
+
+
+
+
+.content-wrapper {
+	max-width : 60rem;
+	display : flex;
+	flex-flow : row wrap;
+	justify-content : center;
+}
+@media only screen and (min-width: 900px) {
+	.content-wrapper {
+		max-width : initial;
+	}
+}
+@media only screen and (min-width: 1100px) {
+	.content-wrapper {
+		width : 90%;
+	}
+}
+
+
+.content-left {
+	margin-bottom : 8rem;
+}
+@media only screen and (min-width: 900px) {
+	.content-left {
+		width : 50%;
+	}
+}
+.content-left img {
+	width : 100%;
+	height : auto;
+}
+
+
+.content-right {
+    margin-bottom : 10rem;	
+}
+@media only screen and (min-width: 900px) {
+	.content-right {
+		width : 50%;
+	}
+}
+.content-right__heading {
+	font-family: 'Poppins', sans-serif;
+	font-weight : 600;
+	font-size : 3.5rem;
+	text-align : center;
+	color : white;
+	margin-bottom : 2.8rem;
+}
+.content-right__text {
+	font-family: 'Open Sans', sans-serif;
+	font-weight : 400;
+	font-size : 2.4rem;
+	line-height : 3rem;
+	text-align : center;
+	color : white;
+	margin-bottom : 6rem;
+}
+.register-btn-wrapper {
+	text-align : center;
+}
+.register-btn {
+	display : inline-block;
+	font-family: 'Poppins', sans-serif;
+	font-weight : 600;
+	text-decoration : none;
+	border-radius : 5rem;
+	padding : 2rem 10rem;
+	color : var(--color-violet);
+	background : white;
+	box-shadow : 0 1rem 2rem hsl(257, 20%, 30%);
+	transition : color .4s, background .4s, transform .4s;
+}
+.register-btn:hover {
+	color : white;
+	background : var(--color-soft-magenta);
+	transform : translateY(-.9rem);
+}
+.register-btn:active {
+	transform : translateY(0);
+}
+@media only screen and (min-width: 900px) {
+    .content-right__heading, .content-right__text, .register-btn-wrapper {
+        text-align : start;
+		padding-left : 5rem;
+	}	
+}
+
+.footer-wrapper {
+	max-width : 60rem;
+	position : relative;
+}
+@media only screen and (min-width: 900px) {
+	.footer-wrapper {
+		max-width : initial;
+	}
+}
+@media only screen and (min-width: 1100px) {
+	.footer-wrapper {
+		width : 90%;
+	}
+}
+.social-media {
+	display : flex;
+	justify-content : center;
+	margin-bottom : 3rem;
+}
+@media only screen and (min-width: 900px) {
+	.social-media {
+		justify-content : flex-end;
+	    margin-bottom : 1rem;
+	}
+}
+.social-media__link:not(:last-child) {
+	margin-right : 1.3rem;
+}
+.media-link__icons {
+	fill : white;
+	height : 4rem;
+	width : auto;
+	padding : 1rem;
+	border : 1px solid white;
+	border-radius : 50%;
+	overflow : visible;
+	transition : transform .4s; 
+}
+.social-media__link:hover .media-link__icons {
+	fill : hsl(300, 69%, 71%);
+	border-color : hsl(300, 69%, 71%);
+	transform : scale(1.2);
+}
+.attribution {
+	font-family: 'Poppins', sans-serif;
+	font-weight : 400;
+    font-size: 11px; 
+	text-align: center;
+    color : white;
+	justify-content : center;
+}
+@media only screen and (min-width: 900px) {
+	.attribution {
+		text-align : start;
+		position : absolute;
+		left : 1.1rem;
+		top : 1rem;
+	}
+}
+.attribution a { 
+    color: white; 
+}
+.attribution a:hover {
+	color : var(--color-soft-magenta);
+}
