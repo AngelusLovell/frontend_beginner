@@ -38,3 +38,5 @@ https://angeluslovell.github.io/frontend_beginner/ping-coming-soon-page-master/
 huddle-landing-page-with-single-introductory-section-master
 https://angeluslovell.github.io/frontend_beginner/huddle-landing-page-with-single-introductory-section-master/
 
+tip-calculator-app-main
+https://angeluslovell.github.io/frontend_beginner/tip-calculator-app-main/
