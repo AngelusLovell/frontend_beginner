@@ -24,7 +24,7 @@ html {
 
 @media only screen and (min-width : 1000px) {
 	html {
-		font-size : 58%;
+		font-size : 52%;
 	}
 }
 
@@ -184,7 +184,7 @@ button, .custom-btn {
 	background : var(--color-Light-grayish-cyan-next);
 }
 
-.input-people {
+#input-people {
 	margin-bottom : 4rem;
 }
 
@@ -246,6 +246,7 @@ button, .custom-btn {
 	width : 100%;
 	color : var(--color-Very-dark-cyan);
 	background : var(--color-Strong-cyan);
+	margin-top : 2.5rem;
 }
 
 .reset-btn:active {
@@ -254,7 +255,7 @@ button, .custom-btn {
 
 @media only screen and (min-width : 1000px) {
 	.reset-btn {
-		margin-top : 11rem;
+		margin-top : 15rem;
 	}
 }
 
