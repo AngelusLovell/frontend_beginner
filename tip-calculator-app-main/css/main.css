@@ -24,7 +24,7 @@ html {
 
 @media only screen and (min-width : 1000px) {
 	html {
-		font-size : 52%;
+		font-size : 47.5%;
 	}
 }
 
@@ -44,12 +44,13 @@ body {
 	font-weight : 700;
 	color : var(--color-Dark-grayish-cyan);
 	background : var(--color-Light-grayish-cyan);
+	padding-bottom : 6.2rem;
 	overflow-x : hidden;
 }
 
 @media only screen and (min-width : 1000px) {
-    body {
-		padding-top : 3rem;
+	body {
+		padding-bottom : 0;
 	}
 }
 
@@ -141,6 +142,13 @@ input[type="number"]:not(.custom-btn) {
 	background : url("../images/icon-person.svg") var(--color-Light-grayish-cyan-next);
 	background-repeat : no-repeat;
 	background-position : 2.5rem center;
+	margin-bottom : 4rem;
+}
+
+@media only screen and (min-width : 1000px) {
+	#input-people {
+		margin-bottom : 0;
+	}
 }
 
 input[type="number"]:focus {
@@ -182,10 +190,6 @@ button, .custom-btn {
 	text-align : center;
 	color : var(--color-Dark-grayish-cyan);
 	background : var(--color-Light-grayish-cyan-next);
-}
-
-#input-people {
-	margin-bottom : 4rem;
 }
 
 .calculator__right {
@@ -255,7 +259,7 @@ button, .custom-btn {
 
 @media only screen and (min-width : 1000px) {
 	.reset-btn {
-		margin-top : 15rem;
+		margin-top : 12rem;
 	}
 }
 
