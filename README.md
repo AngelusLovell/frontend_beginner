@@ -2,9 +2,6 @@
 Quick-links for all of the above projects in web-form.
 
 
-RWD_challenge -
-https://angeluslovell.github.io/frontend_beginner/RWD_challenge/
-
 article-preview-component-master -
 https://angeluslovell.github.io/frontend_beginner/article-preview-component-master/
 
