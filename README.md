@@ -1,5 +1,5 @@
 # frontend_beginner
-Practicing of frontend web devlopement.
+Quick-links for all of the above projects in web-form.
 
 
 RWD_challenge -
