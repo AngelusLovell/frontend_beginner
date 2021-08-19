@@ -53,17 +53,6 @@ body {
 	width : 100vw;
     overflow-x : hidden;
 }
-/*@media only screen and (min-width : 600px) {
-    body {
-    	display : flex;
-    	flex-flow : column nowrap;
-		justify-content : center;
-		align-items : center;
-	}
-	header, main, footer {
-		max-width : 80rem;
-	}
-}*/
 
 picture img {
 	display : block;
@@ -397,7 +386,7 @@ footer {
 	width : 100vw;
 	height : auto;
 	padding-bottom : 1rem;
-	background : var(--color-dark-moderate-cyan);
+	background : hsl(168, 44%, 61%);
 }
 
 .footer__img-wrapper {
@@ -479,6 +468,11 @@ footer {
 .footer__logo path, .footer__media path {
 	fill : var(--color-dark-desaturated-cyan);
 }
+@media only screen and (min-width: 1200px) {
+	.footer__media:hover path {
+	    fill : var(--color-white);
+	}
+}
 
 .footer__link-wrapper {
 	text-align : center;
@@ -495,9 +489,18 @@ footer {
 	margin-right : 3.5rem;
 }
 
+.footer__media {
+	cursor : pointer;
+}
+
 .footer__media:not(:last-child) {
 	margin-right : 2.5rem;
 }
+
+.footer__link:hover {
+	color : var(--color-white);
+}
+
 
 
 .content-bottom {
