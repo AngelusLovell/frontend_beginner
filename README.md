@@ -37,3 +37,9 @@ https://angeluslovell.github.io/frontend_beginner/huddle-landing-page-with-singl
 
 tip-calculator-app-main
 https://angeluslovell.github.io/frontend_beginner/tip-calculator-app-main/
+
+sunnyside-agency-landing-page-main
+https://angeluslovell.github.io/frontend_beginner/sunnyside-agency-landing-page-main/
+
+crowdfunding-product-page-main
+https://angeluslovell.github.io/frontend_beginner/crowdfunding-product-page-main/
